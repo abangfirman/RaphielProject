@@ -7,7 +7,7 @@ gg.searchAddress("4", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
 local t = gg.getResults(9999)
 for i, v in ipairs(t) do
 	if v.flags == gg.TYPE_DWORD then
-		v.value = "9"
+		v.value = "8"
 		v.freeze = true
 	end
 end
