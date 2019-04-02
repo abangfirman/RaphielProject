@@ -1,3 +1,4 @@
+--Taiyouscape--
 gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS, gg.REGION_C_ALLOC))
 gg.clearResults()
 gg.searchNumber("523533590", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
