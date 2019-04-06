@@ -16,13 +16,12 @@ goto START
 
 
 ::START::
-menu = gg.choice ({'[1️⃣]Ｒａｄａｒ 太陽','[2️⃣]Ｄｒｏｎｅ 太陽','[⏳]Ｅｘｐｉｒｅｄ チメ','[⚠️]Ｃｒｅｄｉｔ','[⛔]Ｅｘｉｔ'}, nill, "The version you have is Taiyou Project Script v1.2understable0504190931jungleonly")
+menu = gg.choice ({'[1️⃣]Ｒａｄａｒ 太陽','[2️⃣]Ｄｒｏｎｅ 太陽','[⚠️]Ｃｒｅｄｉｔ','[⛔]Ｅｘｉｔ'}, nill, "The version you have is Taiyou Project Script v1.2understable0504190931jungleonly")
 
 if menu == 1 then goto maplist end
 if menu == 2 then goto drone end
-if menu == 3 then goto time end
-if menu == 4 then goto help end
-if menu == 5 then goto lol end
+if menu == 3 then goto help end
+if menu == 4 then goto lol end
 if menu == nill then goto START end
 os.exit()
 
@@ -56,11 +55,6 @@ os.exit()
 
 
 ::y::
-goto START
-os.exit()
-
-::time::
-gg.alert("Ｅｘｐｉｒｅｄ 090419。","Ｈｏｍｅ")
 goto START
 os.exit()
 
