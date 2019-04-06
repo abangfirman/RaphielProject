@@ -1,5 +1,5 @@
 goto y
 
 ::y::
-gg.toast("Coming Soon")
+gg.alert("Coming Soon","Exit")
 os.exit()
