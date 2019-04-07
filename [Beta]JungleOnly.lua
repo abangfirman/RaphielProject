@@ -1,8 +1,3 @@
-goto y
-
-::y::
-gg.alert("Akan Datang")
-os.exit()
 -- Created By Taiyou --
 -- Respect Creator --
 gg.setRanges(bit32.bxor(gg.REGION_C_ALLOC))
