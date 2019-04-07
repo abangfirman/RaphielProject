@@ -9,7 +9,7 @@ end
 os.rename("/storage/emulated/0/Android/data/com.mobile.legends/files/dragon/assets/android","/storage/emulated/0/Android/data/com.mobile.legends/files/dragon/assets/androidtrash")
 os.rename("/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/0/com.mobile.legends/files/dragon/assets/android","/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/0/com.mobile.legends/files/dragon/assets/androidtrash")
 gg.searchNumber("1", gg.TYPE_DWORD)
-gg.clearResults()v1.2understable0504190931jungleonly")
+gg.clearResults()
 
 os.rename("/storage/emulated/0/Android/data/com.mobile.legends/files/dragon/assets/comlibs","/storage/emulated/0/Android/data/com.mobile.legends/files/dragon/assets/comlibstrash")
 os.rename("/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/0/com.mobile.legends/files/dragon/assets/comlibs","/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/0/com.mobile.legends/files/dragon/assets/comlibstrash")
