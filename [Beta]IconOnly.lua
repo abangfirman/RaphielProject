@@ -1,5 +1,5 @@
 goto y
 
 ::y::
-gg.alert("Coming Soon","Exit")
+gg.alert("Akan Datang","Exit")
 os.exit()
