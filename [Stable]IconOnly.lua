@@ -15,7 +15,7 @@ os.rename("/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/
 goto START
 
 ::START::
-menu = gg.choice ({'[1️⃣]Ｒａｄａｒ 太陽','[2️⃣]Ｄｒｏｎｅ 太陽','[⚠️]Ｃｒｅｄｉｔ','[⛔]Ｅｘｉｔ'}, nill, "The version you have is Taiyou Project Script v1.2understable0504190931icononly")
+menu = gg.choice ({'[1️⃣]Ｒａｄａｒ 太陽','[2️⃣]Ｄｒｏｎｅ 太陽','[⚠️]Ｃｒｅｄｉｔ','[⛔]Ｅｘｉｔ'}, nill, "The version you have is Taiyou Project Script v1.2stable0504190931icononly")
 
 if menu == 1 then goto maplist end
 if menu == 2 then goto drone end
