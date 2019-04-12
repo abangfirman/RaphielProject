@@ -6,12 +6,6 @@ gg.setVisible(false)
 gg.clearResults()
 end
 
-os.rename("/storage/emulated/0/Android/data/com.mobile.legends/files/dragon/assets/android","/storage/emulated/0/Android/data/com.mobile.legends/files/dragon/assets/androidtrash")
-os.rename("/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/0/com.mobile.legends/files/dragon/assets/android","/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/0/com.mobile.legends/files/dragon/assets/androidtrash")
-gg.searchNumber("1", gg.TYPE_DWORD)
-gg.clearResults()
-os.rename("/storage/emulated/0/Android/data/com.mobile.legends/files/dragon/assets/comlibs","/storage/emulated/0/Android/data/com.mobile.legends/files/dragon/assets/comlibstrash")
-os.rename("/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/0/com.mobile.legends/files/dragon/assets/comlibs","/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/0/com.mobile.legends/files/dragon/assets/comlibstrash")
 goto START
 
 ::START::
@@ -58,14 +52,14 @@ os.exit()
 ::icon::
 gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS, gg.REGION_C_ALLOC))
 gg.clearResults()
-gg.searchNumber("523533590", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("523533590", gg.TYPE_DWORD)
 gg.getResults(100)
-gg.editAll("523533593", gg.TYPE_DWORD, false, 536870912, 0, -1)
+gg.editAll("523533593", gg.TYPE_DWORD)
 gg.clearResults()
-gg.searchNumber("880608002;33816607:5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("880608002", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("33816606;880608002", gg.TYPE_DWORD)
+gg.searchNumber("880608002", gg.TYPE_DWORD)
 gg.getResults(100)
-gg.editAll("880613634", gg.TYPE_DWORD, false, 536870912, 0, -1)
+gg.editAll("880613695", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("Ａｃｔｉｖａｔｅｄ!")
 goto y
