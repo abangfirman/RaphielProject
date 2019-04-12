@@ -6,17 +6,10 @@ gg.setVisible(false)
 gg.clearResults()
 end
 
-os.rename("/storage/emulated/0/Android/data/com.mobile.legends/files/dragon/assets/android","/storage/emulated/0/Android/data/com.mobile.legends/files/dragon/assets/androidtrash")
-os.rename("/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/0/com.mobile.legends/files/dragon/assets/android","/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/0/com.mobile.legends/files/dragon/assets/androidtrash")
-gg.searchNumber("1", gg.TYPE_DWORD)
-gg.clearResults()
-os.rename("/storage/emulated/0/Android/data/com.mobile.legends/files/dragon/assets/comlibs","/storage/emulated/0/Android/data/com.mobile.legends/files/dragon/assets/comlibstrash")
-os.rename("/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/0/com.mobile.legends/files/dragon/assets/comlibs","/storage/emulated/0/Android/data/com.lbe.parallel.into/parallel_intl/0/com.mobile.legends/files/dragon/assets/comlibstrash")
 goto START
 
-
 ::START::
-menu = gg.choice ({'[1️⃣]Ｒａｄａｒ 太陽','[2️⃣]Ｄｒｏｎｅ 太陽','[⚠️]Ｃｒｅｄｉｔ','[⛔]Ｅｘｉｔ'}, nill, "The version you have is Taiyou Project Script v1.2stable0504190931jungleonly")
+menu = gg.choice ({'[1️⃣]Ｒａｄａｒ 太陽','[2️⃣]Ｄｒｏｎｅ 太陽','[⚠️]Ｃｒｅｄｉｔ','[⛔]Ｅｘｉｔ'}, nill, "The version you have is Taiyou Project Script v1.2stable1204090703jungleonly")
 
 if menu == 1 then goto maplist end
 if menu == 2 then goto drone end
@@ -182,7 +175,7 @@ gg.searchAddress("4", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
 local t = gg.getResults(9999)
 for i, v in ipairs(t) do
 	if v.flags == gg.TYPE_DWORD then
-		v.value = "9"
+		v.value = "10"
 		v.freeze = true
 	end
 end
