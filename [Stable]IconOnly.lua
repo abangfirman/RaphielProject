@@ -9,7 +9,7 @@ end
 goto START
 
 ::START::
-menu = gg.choice ({'[1️⃣]Ｒａｄａｒ 太陽','[2️⃣]Ｄｒｏｎｅ 太陽','[⚠️]Ｃｒｅｄｉｔ','[⛔]Ｅｘｉｔ'}, nill, "The version you have is Taiyou Project Script v1.2stable1204190703icononly")
+menu = gg.choice ({'[1️⃣]Radar 太陽','[2️⃣]Drone 太陽','[⚠️]Credit','[⛔]Exit'}, nill, "The version you have is Taiyou Project Script v1.2stable2004192128icononly")
 
 if menu == 1 then goto maplist end
 if menu == 2 then goto drone end
@@ -20,7 +20,7 @@ os.exit()
 
 ::maplist::
 menusec = gg.choice({
-"[1️⃣]Ｉｃｏｎ Ｍｉｎｉｍａｐらだる",
+"[1️⃣]Icon Radar",
 "[◀️]"
 }, nil, "Read the Title carefully!.")
 if menusec == nil then else
@@ -31,9 +31,9 @@ os.exit()
 
 ::drone::
 menusec = gg.choice({
-"[1️⃣]Ｄｅｆａｕｌｔ。",
-"[2️⃣]Ｍｅｄｉｕｍ。",
-"[3️⃣]Ｈｉｇｈ。",
+"[1️⃣]Default",
+"[2️⃣]Medium",
+"[3️⃣]High",
 "[◀️]"
 }, nil, "Enable Drone Menu!")
 if menusec == nil then else
@@ -61,7 +61,7 @@ gg.searchNumber("880608002", gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll("880613695", gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast("Ａｃｔｉｖａｔｅｄ!")
+gg.toast("Activated!")
 goto y
 os.exit()
 
@@ -92,7 +92,7 @@ gg.searchNumber('-1054867456;-1057761526;1110143140', gg.TYPE_DWORD)
 gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1054898913', gg.TYPE_DWORD)
-gg.toast("Ａｃｔｉｖａｔｅｄ!")
+gg.toast("Activated!")
 gg.clearResults()
 goto y
 os.exit()
@@ -124,7 +124,7 @@ gg.searchNumber('-1053577640;-1057761526;1110143140', gg.TYPE_DWORD)
 gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1054071526', gg.TYPE_DWORD)
-gg.toast("Ａｃｔｉｖａｔｅｄ!")
+gg.toast("Activated!")
 gg.clearResults()
 goto y
 os.exit()
@@ -156,7 +156,7 @@ gg.searchNumber('-1049834291;-1057761526;1110143140', gg.TYPE_DWORD)
 gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1049876234', gg.TYPE_DWORD)
-gg.toast("Ａｃｔｉｖａｔｅｄ!")
+gg.toast("Activated!")
 gg.clearResults()
 goto y
 os.exit()
@@ -168,8 +168,8 @@ os.exit()
 
 ::lol::
 menusec = gg.choice({
-"[️✔️]ＹＥＳ",
-"[❌]ＮＯ"
+"[️✔️]Yes",
+"[❌]No"
 }, nil, "Do you really want to Exit?")
 if menusec == nil then else
 if menusec == 1 then goto yaya end
