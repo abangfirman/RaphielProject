@@ -1,55 +1,35 @@
--- Created By Taiyou --
--- Respect Creator --
-gg.setRanges(bit32.bxor(gg.REGION_C_ALLOC))
-if gg.isVisible(true) then
-gg.setVisible(false) 
-gg.clearResults()
+-- Taiyouscape
+-- First Menu
+TYU=1
+function START()
+ST=gg.choice({'1. Radar 太陽','2. Drone 太陽','3. Credit','4. Exit'}, nil, "The version you have is Taiyou Project Script v1.3stable2104191103icononly")
+if ST == 1 then radar() end
+if ST == 2 then drone() end
+if ST == 3 then credit() end
+if ST == 4 then exit() end
+TYU=-1
 end
 
-goto START
-
-::START::
-menu = gg.choice ({'[1️⃣]Radar 太陽','[2️⃣]Drone 太陽','[⚠️]Credit','[⛔]Exit'}, nill, "The version you have is Taiyou Project Script v1.2stable2004192128icononly")
-
-if menu == 1 then goto maplist end
-if menu == 2 then goto drone end
-if menu == 3 then goto help end
-if menu == 4 then goto lol end
-if menu == nill then goto START end
-os.exit()
-
-::maplist::
-menusec = gg.choice({
-"[1️⃣]Icon Radar",
-"[◀️]"
-}, nil, "Read the Title carefully!.")
-if menusec == nil then else
-if menusec == 1 then goto icon end
-if menusec == 2 then goto START end
+TYU=1
+function radar()
+RD=gg.choice({"1. Icon Radar","2. Back"}, nil, "Read the Title carefully!.")
+if RD == 1 then ir() end
+if RD == 2 then START() end
+TYU=-1
 end
-os.exit()
 
-::drone::
-menusec = gg.choice({
-"[1️⃣]Default",
-"[2️⃣]Medium",
-"[3️⃣]High",
-"[◀️]"
-}, nil, "Enable Drone Menu!")
-if menusec == nil then else
-if menusec == 1 then goto l end
-if menusec == 2 then goto lss end
-if menusec == 3 then goto ls end
-if menusec == 4 then goto START end
+TYU=1
+function drone()
+DR=gg.choice({"1. Default","2. Medium","3. High","4. Back"}, nil, "Enable Drone Menu!")
+if DR == 1 then dd() end
+if DR == 2 then dm() end
+if DR == 3 then dh() end
+if DR == 4 then START() end
+TYU=-1
 end
-os.exit()
 
-
-::y::
-goto START
-os.exit()
-
-::icon::
+-- Number Code
+function ir()
 gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS, gg.REGION_C_ALLOC))
 gg.clearResults()
 gg.searchNumber("523533590", gg.TYPE_DWORD)
@@ -62,10 +42,9 @@ gg.getResults(100)
 gg.editAll("880613695", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("Activated!")
-goto y
-os.exit()
+end
 
-::l::
+function dd()
 gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
 gg.clearResults()
 gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
@@ -92,12 +71,11 @@ gg.searchNumber('-1054867456;-1057761526;1110143140', gg.TYPE_DWORD)
 gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1054898913', gg.TYPE_DWORD)
-gg.toast("Activated!")
 gg.clearResults()
-goto y
-os.exit()
+gg.toast("Activated!")
+end
 
-::lss::
+function dm()
 gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
 gg.clearResults()
 gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
@@ -124,12 +102,11 @@ gg.searchNumber('-1053577640;-1057761526;1110143140', gg.TYPE_DWORD)
 gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1054071526', gg.TYPE_DWORD)
-gg.toast("Activated!")
 gg.clearResults()
-goto y
-os.exit()
+gg.toast("Activated!")
+end
 
-::ls::
+function dh()
 gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
 gg.clearResults()
 gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
@@ -156,26 +133,27 @@ gg.searchNumber('-1049834291;-1057761526;1110143140', gg.TYPE_DWORD)
 gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1049876234', gg.TYPE_DWORD)
-gg.toast("Activated!")
 gg.clearResults()
-goto y
-os.exit()
-
-::help::
-gg.alert('Made By Taiyouscape!\n\nTaiyou Project is Open-Source Now!')
-goto START
-os.exit()
-
-::lol::
-menusec = gg.choice({
-"[️✔️]Yes",
-"[❌]No"
-}, nil, "Do you really want to Exit?")
-if menusec == nil then else
-if menusec == 1 then goto yaya end
-if menusec == 2 then goto START end
+gg.toast("Activated!")
 end
-os.exit()
 
-::yaya::
+-- Text Code
+function credit()
+gg.alert('Made By Taiyouscape!\n\nTaiyou Project is Open-Source Now!')
+START()
+end
+
+function exit()
 os.exit()
+end
+
+while true do
+if gg.isVisible(true) then
+TYU = 1
+gg.setVisible(false)
+end
+gg.clearResults()
+if TYU == 1 then
+START()
+end
+end
