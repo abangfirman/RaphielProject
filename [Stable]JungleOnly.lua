@@ -12,9 +12,10 @@ end
 
 TYU=1
 function radar()
-RD=gg.choice({"1. Normal Radar (When match start & Jungles spawn)","2. Back"}, nil, "Read the Title carefully!.")
+RD=gg.choice({"1. Normal Radar (When match start & Jungles spawn)","2. Refresh","3. Back"}, nil, "Read the Title carefully!.")
 if RD == 1 then nr() end
-if RD == 2 then START() end
+if RD == 2 then nr() end
+if RD == 3 then START() end
 TYU=-1
 end
 
