@@ -157,7 +157,6 @@ if gg.isVisible(true) then
 TYU = 1
 gg.setVisible(false)
 end
-gg.clearResults()
 if TYU == 1 then
 START()
 end
