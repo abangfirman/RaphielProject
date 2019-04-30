@@ -2,11 +2,11 @@
 -- First Menu
 TYU=1
 function START()
-ST=gg.choice({'1. Radar 太陽','2. Drone 太陽','3. Credit','4. Exit'}, nil, "The version you have is Taiyou Project Script v1.3stable2104191103normalonly")
+ST=gg.choice({'1. Radar 太陽','2. Drone 太陽','3. Credit','4. Quit'}, nil, "The version you have is Taiyou Project Script v1.3stable2104191103normalonly")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
-if ST == 4 then exit() end
+if ST == 4 then quit() end
 TYU=-1
 end
 
@@ -148,7 +148,7 @@ gg.alert('Made By Taiyouscape!\n\nTaiyou Project is Open-Source Now!')
 START()
 end
 
-function exit()
+function quit()
 os.exit()
 end
 
