@@ -2,7 +2,7 @@
 -- First Menu
 TYU=1
 function START()
-ST=gg.choice({'1. Radar 太陽','2. Drone 太陽','3. Credit','4. Quit'}, nil, "The version you have is Taiyou Project Script v1.3stable2104191103icononly")
+ST=gg.choice({'1. Radar 太陽 (Lobby)','2. Drone 太陽(Lobby)','3. Credit','4. Quit'}, nil, "The version you have is Taiyou Project Script v1.3stable2104191103icononly")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
