@@ -1,8 +1,8 @@
--- Taiyouscape
+-- Raphielsama
 -- First Menu
 TYU=1
 function START()
-ST=gg.choice({'1. Radar 太陽 (In Game)','2. Drone 太陽 (Lobby)','3. Credit','4. Quit'}, nil, "The version you have is Taiyou Project Script v1.3stable2104191103normalonly")
+ST=gg.choice({'1. Radar ラフィ (In Game)','2. Drone ラフィ (Lobby)','3. Credit','4. Quit'}, nil, "The version you have is Raphiel Project Script v1.3stable2104191103normalonly")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
@@ -144,7 +144,7 @@ end
 
 -- Text Code
 function credit()
-gg.alert('Made By Taiyouscape!\n\nTaiyou Project is Open-Source Now!')
+gg.alert('Made By Raphielsama!\n\nRaphiel Project is Open-Source Now!')
 START()
 end
 
