@@ -1,4 +1,3 @@
-
 function HOME()
   MN = gg.choice({
   	"🅰️ Antireport[Lobby]",
